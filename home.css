@@ -1,0 +1,230 @@
+
+/* template section */
+
+/* end of template section */
+
+
+.container1 
+{
+  background-image:url("Assets/image3.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  border-radius:5px;
+
+
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-content: center;
+  grid-gap:300px;
+  padding:50px;
+  
+
+  
+  
+  
+}
+
+.container2
+{
+
+  display:grid;
+  grid-template-columns:  auto auto auto ;
+  justify-content: center;
+  align-content: center;
+  grid-gap:100px;
+  
+}
+
+
+
+.item
+{
+  color: white;
+  grid-column-start:2;
+  grid-column-end:2;
+  grid-row-start: 2;
+  grid-row-end:2;
+}
+
+.item1
+{
+  margin-left:350px;
+
+}
+
+
+  
+
+  .textBox
+  {
+    justify-content:center;
+    align-content:center;
+    margin:auto;
+    
+      width: 700px;
+      height: 300px;
+      padding: 15px;
+      
+      background-color: 	rgb(243, 243, 197);
+      color:black;
+      box-shadow: 10px 10px 5px grey;
+      
+      border-radius:50px;
+    
+  }
+
+  #rightPicture
+  {
+   width:350px;
+   height:350px; 
+   border-style: solid;
+   border-radius:10%;
+    
+    
+    
+    
+    
+    
+  }
+
+
+
+/* media queries (controversial) */
+
+
+@media screen and (max-width:1440px)
+{
+.container2
+{
+  margin-right:50vh;
+}
+ 
+}
+
+  @media screen and (max-width:1024px)
+  {
+
+   .textBox
+   {
+     width:400px;
+   }
+   #rightPicture
+   {
+     width:30vh;
+     height:30vh;
+   }
+ 
+  }
+
+  @media screen and (max-width:768px) 
+  {
+  
+
+
+
+    .textBox
+    {
+      width:30vh;
+    }
+    .container2
+    {
+      
+    margin-right:60vh;
+  }
+
+
+
+  }
+
+  @media screen and (max-width:425px)  
+  {
+    .container2
+    {
+      grid-gap:2vh;
+    }
+
+    .textBox
+    {
+      font-size:1.3vh;
+      width:30vh;
+      height:30vh;
+    }
+
+    #rightPicture
+    {
+      width:30vh;
+      height:30vh;
+      
+    }
+    .item2
+    {
+      grid-row-start:1;
+      grid-row-end:1;
+
+      grid-column-start:2;
+      grid-column-end:2;
+    
+    }
+    .item3
+    {
+      grid-row-start:2;
+      grid-row-end:2;
+
+      grid-column-start:2;
+      grid-column-end:2;
+     
+    }
+
+    .container1
+    {
+      grid-gap:2vh;
+      
+    }
+    .name
+    {
+      width:30vh;
+    }
+
+    .item
+    {
+      width:375px;
+    }
+  }
+
+  @media screen and (max-width:325px) 
+  {
+    
+    
+.name
+{
+width:20vh;
+margin-right:10vh;
+}
+hr{
+  margin-right:10vh;}
+.container1
+{
+  background-size:cover;
+  grid-gap:1vh;
+}
+
+.item
+{
+  width:325px;
+}
+
+  }
+
+
+
+
+  
+
+
+
+
+
+ 
